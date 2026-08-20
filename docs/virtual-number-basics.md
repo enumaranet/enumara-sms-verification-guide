@@ -10,6 +10,14 @@ Geçici numara ve sanal numara kavramları bazen aynı anlamda kullanılsa da ar
 
 Platform uyumluluğu da önemli bir konudur. Bir numara belirli bir servis için çalışırken başka bir platformda uygun olmayabilir. Aynı şekilde stokta görünen bir ülke kodu her zaman her uygulama için ideal seçenek anlamına gelmez. Bu nedenle işlem öncesinde servis adı, ülke kodu ve güncel fiyat kontrolü yapılması sağlıklı bir yaklaşımdır.
 
+Sanal numara seçerken kullanım amacını netleştirmek de önemlidir. Bazı kullanıcılar yalnızca tek bir doğrulama kodu almak isterken, bazıları belirli bir platformda kayıt akışını test etmek veya mevcut doğrulama sürecini anlamak isteyebilir. Bu iki kullanım aynı gibi görünse de beklenti yönetimi açısından farklıdır. Tek seferlik doğrulama akışında kodun zamanında gelmesi yeterli olabilir. Daha uzun süreli kullanım gerektiren senaryolarda ise numaranın tekrar erişilebilir olup olmadığı, servis kuralları ve panelin sunduğu takip seçenekleri ayrıca incelenmelidir.
+
+Bir diğer dikkat noktası fiyat ve stok bilgisinin anlık değişebilmesidir. Sanal numara servislerinde fiyatlar ülkeye, platforma ve talebe göre farklılaşabilir. Aynı servis için farklı ülkelerde farklı ücretler görülebilir. Stok durumu da kullanıcı yoğunluğuna göre değiştiği için işlem yapmadan hemen önce paneldeki güncel bilgiyi kontrol etmek gerekir. Eski bir ekran görüntüsüne veya daha önce görülen fiyata göre karar vermek yanıltıcı olabilir.
+
+Sanal numara kullanımında güvenli dil ve doğru beklenti de önemlidir. Hiçbir numara için her platformda kesin çalışma iddiası verilmemelidir. Platformların kendi güvenlik kontrolleri, ülke kısıtları ve SMS gönderim politikaları vardır. Bu yüzden doğru yaklaşım, desteklenen servisleri ve mevcut seçenekleri kontrol etmek, ardından doğrulama sürecini platformun izin verdiği çerçevede yürütmektir.
+
+Kullanıcı tarafında en iyi pratiklerden biri, işlem öncesinde üç bilgiyi birlikte kontrol etmektir: seçilen servis adı, ülke kodu ve stok durumu. Bu üçlü doğru değilse SMS kodu gelmeyebilir veya gelen kod beklenen doğrulamada kullanılamayabilir. Açıklama alanları, panel uyarıları ve servis notları varsa bunlar da dikkate alınmalıdır.
+
 eNUMARA üzerinde güncel [sanal numara seçenekleri](https://enumara.net/sanal-numara) servis, ülke ve stok durumuna göre incelenebilir. Bu bilgiler, doğrulama sürecine başlamadan önce hangi seçeneğin daha uygun olabileceğini değerlendirmeye yardımcı olur.
 
 Son olarak, sanal numara kullanımı platformların kendi kullanım koşullarına uygun şekilde değerlendirilmelidir. Amaç güvenlik önlemlerini aşmak değil, desteklenen doğrulama süreçlerinde SMS kodu alma mantığını doğru anlamaktır.
