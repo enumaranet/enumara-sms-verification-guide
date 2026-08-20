@@ -12,4 +12,12 @@ Kod gelmezse numaranın platforma doğru yazıldığını kontrol etmek gerekir.
 
 Bir diğer kontrol noktası kod isteme sıklığıdır. Aynı platformda kısa süre içinde çok fazla kod talep etmek geçici sınırlamalara yol açabilir. Böyle durumlarda platform bir süre yeni SMS göndermeyebilir. Bu nedenle kod isteme işlemini gereksiz tekrarlarla zorlamamak gerekir.
 
+Paneldeki durum bilgisi de dikkatle incelenmelidir. Bazı sistemlerde numara alınmış olsa bile SMS henüz bekleme aşamasında olabilir. Kullanıcı bu sırada sayfayı kapatır veya farklı bir servis seçerse doğrulama akışını takip etmek zorlaşabilir. İşlem tamamlanana kadar paneldeki ilgili numara ve servis ekranı izlenmelidir.
+
+Fiyat ve bakiye kontrolü de basit ama önemli bir adımdır. Kullanıcı işlem başlatmadan önce güncel fiyatı ve hesabındaki bakiyeyi kontrol etmelidir. Yetersiz bakiye veya işlem sırasında değişen fiyat bilgisi, numara alma adımının tamamlanmamasına neden olabilir. Bu durum SMS kodu gelmiyor gibi algılansa da aslında işlem hiç başlamamış olabilir.
+
+Kod tesliminde gecikme yaşanıyorsa farklı bir ülke seçeneğini değerlendirmek de mantıklı olabilir. Ancak bunu yaparken aynı platformda çok sayıda tekrar deneme yapmak yerine, önce mevcut işlemin durumunu netleştirmek gerekir. Gereksiz tekrarlar hem kullanıcı deneyimini zorlaştırır hem de platform tarafında beklenmeyen sınırlamalara yol açabilir.
+
+Ayrıca platformların dönemsel güvenlik kontrolleri olabileceği unutulmamalıdır. Bir servis daha önce belirli bir ülke kodunu kabul etmiş olsa bile daha sonra farklı davranabilir. Bu durum sanal numara panelinden bağımsız olarak platformun kendi kurallarından kaynaklanabilir. Bu yüzden kesin çalışma garantisi yerine güncel uyumluluk ve stok kontrolü üzerinden ilerlemek daha doğru bir yaklaşımdır.
+
 Son olarak, her numara ve her platform için kesin sonuç garantisi vermek doğru değildir. Doğrulama süreçleri platformların kendi güvenlik ve teslim kurallarına bağlıdır. Güncel seçenekleri incelemek için [eNUMARA](https://enumara.net) üzerinden servis, ülke ve stok bilgilerini kontrol edebilirsiniz.
