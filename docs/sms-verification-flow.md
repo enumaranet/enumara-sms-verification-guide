@@ -10,6 +10,14 @@ Sanal numara bu akışta telefon numarası alma ve SMS kodunu panelden izleme no
 
 SMS teslim süresi de her zaman aynı değildir. Operatör yoğunluğu, platformun gönderim sistemi, ülke kodu ve numara türü gibi etkenler kodun gelme süresini etkileyebilir. Kod hemen gelmezse önce servis ve numara bilgilerinin doğru olduğundan emin olunmalı, ardından paneldeki durum takip edilmelidir.
 
+Doğrulama akışında en sık yapılan hatalardan biri, servis seçimi ile platform seçimini karıştırmaktır. Kullanıcı bir platform için numara alırken panelde doğru servisi seçmelidir. Örneğin Telegram için alınan bir numaranın farklı bir uygulamada kullanılması beklenen sonucu vermeyebilir. SMS doğrulama sistemleri çoğu zaman servis bazlı çalıştığı için kodun doğru panele düşmesi seçilen servisle ilişkilidir.
+
+Bir başka önemli nokta, numara formatıdır. Bazı platformlar ülke kodunu otomatik eklerken bazıları kullanıcının ülke kodunu ayrıca seçmesini ister. Kullanıcı numarayı girerken platformun istediği formata dikkat etmelidir. Fazladan sıfır eklemek, ülke kodunu iki kez yazmak veya eksik karakter girmek SMS’in hiç gönderilmemesine yol açabilir. Bu nedenle panelde görünen numara ile platformdaki giriş alanı birlikte kontrol edilmelidir.
+
+SMS onay sürecinde bekleme ve tekrar deneme davranışı da önem taşır. Kod gelmediğinde aynı işlemi çok kısa aralıklarla tekrar etmek bazı platformlarda geçici sınırlama oluşturabilir. Daha sağlıklı yaklaşım, önce panelde kod durumunu izlemek, ardından gerekiyorsa platformun izin verdiği süre içinde yeni kod talep etmektir. Bu süreçte platformun uyarı mesajları dikkate alınmalıdır.
+
+Yönetim paneli üzerinden yapılan takip, kullanıcının doğrulama sürecini daha kontrollü görmesine yardımcı olur. Kullanıcı hangi servisi seçtiğini, hangi ülke kodunu kullandığını, ücret bilgisini ve kod durumunu tek yerden izleyebilir. Böylece sorun yaşandığında hangi adımda aksama olduğunu anlamak kolaylaşır.
+
 eNUMARA üzerindeki [SMS onay](https://enumara.net/sms-onay) bilgileri, desteklenen servislerde doğrulama kodu alma akışını anlamak için kullanılabilir. Panel üzerinden servis, ülke, stok ve fiyat bilgileri incelenerek doğrulama sürecine daha kontrollü başlanabilir.
 
 SMS doğrulama güvenlik amacı taşıyan bir süreçtir. Bu nedenle sanal numara veya SMS onay kullanırken ilgili platformun kullanım koşullarına uygun hareket edilmeli, otomasyon, spam veya kötüye kullanım amaçlı davranışlardan kaçınılmalıdır.
